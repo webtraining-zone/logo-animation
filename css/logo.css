@@ -1,0 +1,8 @@
+html, body {
+    background-color: #ccc;
+}
+
+.wt-logo-wrapper {
+    border: 1px dashed white;
+    background-color: #999;
+}
