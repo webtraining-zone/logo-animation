@@ -1,8 +1,66 @@
 html, body {
-    background-color: #ccc;
+    background-color: #111;
+}
+
+.wt-container {
+    /*border: 1px solid red;*/
+
 }
 
 .wt-logo-wrapper {
-    border: 1px dashed white;
-    background-color: #999;
+
+}
+
+.wt-logo-wrapper h2 {
+    text-align: center;
+}
+
+.wt-logo {
+    --wt-orange: #f26b31;
+
+    border: 5px solid skyblue;
+    background-color: #aaa;
+    padding: 50px;
+}
+
+.wt-logo.wt-logo--ready {
+    border-color: green;
+}
+
+.wt-logo path, .wt-logo polygon, .wt-logo rect {
+    fill: currentColor;
+}
+
+.wt-logo .cls-1 {
+    color: var(--wt-orange);
+}
+
+.wt-logo .cls-2 {
+    color: white;
+    opacity: 0.3;
+}
+
+.wt-logo .cls-1:last-child { /* Birrete */
+    color: transparent;
+    stroke-dasharray: 0 610;
+
+    stroke-width: 2px;
+    stroke: black;
+}
+
+.wt-logo.wt-logo--ready .cls-1:last-child { /* Birrete */
+    animation: birrete-stroke-animation 2000ms ease-in-out 1s 1 forwards,
+    birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
+}
+
+.wt-logo .cls-1:first-child { /* Llave */
+    stroke-dasharray: 0 210;
+    color: transparent;
+    stroke-width: 2px;
+    stroke: black;
+}
+
+.wt-logo.wt-logo--ready .cls-1:first-child { /* Llave */
+    animation: bracket-stroke-animation 2000ms ease-in-out 1s 1 forwards,
+    birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
 }

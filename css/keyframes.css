@@ -1,0 +1,19 @@
+@keyframes birrete-stroke-animation {
+    to {
+        stroke-dasharray: 610 0;
+    }
+}
+
+@keyframes bracket-stroke-animation {
+    to {
+        stroke-dasharray: 210 0;
+
+    }
+}
+
+@keyframes birrete-fill-animation {
+    to {
+        color: var(--wt-orange);
+        stroke-width: 0;
+    }
+}
