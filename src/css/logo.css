@@ -40,17 +40,13 @@ html, body {
     opacity: 0.3;
 }
 
+/* START: Initial states */
 .wt-logo .cls-1:last-child { /* Birrete */
     color: transparent;
     stroke-dasharray: 0 610;
 
     stroke-width: 2px;
     stroke: black;
-}
-
-.wt-logo.wt-logo--ready .cls-1:last-child { /* Birrete */
-    animation: birrete-stroke-animation 2000ms ease-in-out 1s 1 forwards,
-    birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
 }
 
 .wt-logo .cls-1:first-child { /* Llave */
@@ -60,7 +56,97 @@ html, body {
     stroke: black;
 }
 
+.wt-logo .cls-2:nth-child(2) { /* Letter W */
+}
+
+.wt-logo .cls-2:nth-child(3) { /* Letter E */
+}
+
+.wt-logo .cls-2:nth-child(4) { /* Letter B */
+
+}
+
+.wt-logo .cls-2:nth-child(5) { /* Letter T */
+}
+
+.wt-logo .cls-2:nth-child(6) { /* Letter R */
+}
+
+.wt-logo .cls-2:nth-child(7) { /* Letter A */
+}
+
+.wt-logo .cls-2:nth-child(8) { /* Letter dot over I:1 */
+}
+
+.wt-logo .cls-2:nth-child(9) { /* Letter I:1 */
+}
+
+.wt-logo .cls-2:nth-child(10) { /* Letter N:1 */
+}
+
+.wt-logo .cls-2:nth-child(11) { /* Letter dot over I:2 */
+}
+
+.wt-logo .cls-2:nth-child(12) { /* Letter I:2 */
+}
+
+.wt-logo .cls-2:nth-child(13) { /* Letter N:2 */
+}
+
+.wt-logo .cls-2:nth-child(14) { /* Letter G */
+}
+
+/* END: Initial states */
+
+/* START: Animation triggered */
+.wt-logo.wt-logo--ready .cls-1:last-child { /* Birrete */
+    animation: birrete-stroke-animation 2000ms ease-in-out 1s 1 forwards,
+    birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
+}
+
 .wt-logo.wt-logo--ready .cls-1:first-child { /* Llave */
     animation: bracket-stroke-animation 2000ms ease-in-out 1s 1 forwards,
     birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
 }
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(2) { /* Letter W */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(3) { /* Letter E */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(4) { /* Letter B */
+
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(5) { /* Letter T */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(6) { /* Letter R */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(7) { /* Letter A */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(8) { /* Letter dot over I:1 */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(9) { /* Letter I:1 */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(10) { /* Letter N:1 */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(11) { /* Letter dot over I:2 */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(12) { /* Letter I:2 */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(13) { /* Letter N:2 */
+}
+
+.wt-logo.wt-logo--ready .cls-2:nth-child(14) { /* Letter G */
+}
+
+/* END: Animation triggered */
