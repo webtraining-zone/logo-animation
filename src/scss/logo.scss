@@ -1,0 +1,77 @@
+@import "keyframes";
+
+html, body {
+  background-color: #111;
+}
+
+.wt-container {
+}
+
+.wt-logo-wrapper {
+  h2 {
+    text-align: center;
+  }
+}
+
+.wt-logo {
+  border: 5px solid skyblue;
+  background-color: #aaa;
+  padding: 50px;
+
+  :after { /* 50% divider */
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid green;
+  }
+
+  path, polygon, rect {
+    fill: currentColor;
+  }
+
+  .cls-1 {
+    color: $wt-orange;
+
+    &:last-child { /* Birrete */
+      color: transparent;
+      stroke-dasharray: 0 610;
+
+      stroke-width: 2px;
+      stroke: black;
+      transform: translateX(37.5%);
+    }
+    &:first-child { /* Llave */
+      stroke-dasharray: 0 210;
+      color: transparent;
+      stroke-width: 2px;
+      stroke: black;
+      transform: translateX(37.5%);
+    }
+  }
+
+  .cls-2 {
+    color: white;
+    opacity: 0;
+  }
+
+  &.wt-logo--ready {
+    border-color: green;
+
+    .cls-1 {
+      &:last-child { /* Birrete */
+        animation: birrete-stroke-animation 2000ms ease-in-out 1s 1 forwards,
+        birrete-fill-animation 750ms ease-in-out 3s 1 forwards,
+        birrete-translate-animation 500ms ease-in-out 3000ms 1 forwards;
+      }
+
+      &:first-child { /* Llave */
+        animation: bracket-stroke-animation 2000ms ease-in-out 1s 1 forwards,
+        birrete-fill-animation 750ms ease-in-out 3s 1 forwards,
+        birrete-translate-animation 500ms ease-in-out 3200ms 1 forwards;
+      }
+    }
+  }
+}

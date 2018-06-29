@@ -1,0 +1,33 @@
+@import "variables";
+
+@mixin keyframes ($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@keyframes birrete-stroke-animation {
+  to {
+    stroke-dasharray: 610 0;
+  }
+}
+
+@keyframes bracket-stroke-animation {
+  to {
+    stroke-dasharray: 210 0;
+
+  }
+}
+
+@keyframes birrete-fill-animation {
+  to {
+    color: $wt-orange;
+    stroke-width: 0;
+  }
+}
+
+@keyframes birrete-translate-animation {
+  to {
+    transform: translateX(0);
+  }
+}
