@@ -1,0 +1,20 @@
+{
+  "name": "logo-animation",
+  "version": "1.0.0",
+  "description": "Official Webtraining logo animation",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtraining-zone/logo-animation.git"
+  },
+  "author": "Enrique Diaz Romero <enriqued_93@hotmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/webtraining-zone/logo-animation/issues"
+  },
+  "homepage": "https://github.com/webtraining-zone/logo-animation#readme"
+}
