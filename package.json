@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/webtraining-zone/logo-animation/issues"
   },
-  "homepage": "https://github.com/webtraining-zone/logo-animation#readme"
+  "homepage": "https://github.com/webtraining-zone/logo-animation#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
 }

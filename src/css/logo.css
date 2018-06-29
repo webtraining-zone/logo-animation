@@ -23,6 +23,17 @@ html, body {
     padding: 50px;
 }
 
+.wt-logo:after { /* 50% divider */
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid green;
+
+}
+
 .wt-logo.wt-logo--ready {
     border-color: green;
 }
@@ -37,7 +48,7 @@ html, body {
 
 .wt-logo .cls-2 {
     color: white;
-    opacity: 0.3;
+    opacity: 0;
 }
 
 /* START: Initial states */
@@ -47,6 +58,7 @@ html, body {
 
     stroke-width: 2px;
     stroke: black;
+    transform: translateX(37.5%);
 }
 
 .wt-logo .cls-1:first-child { /* Llave */
@@ -54,12 +66,15 @@ html, body {
     color: transparent;
     stroke-width: 2px;
     stroke: black;
+    transform: translateX(37.5%);
 }
 
 .wt-logo .cls-2:nth-child(2) { /* Letter W */
+
 }
 
 .wt-logo .cls-2:nth-child(3) { /* Letter E */
+
 }
 
 .wt-logo .cls-2:nth-child(4) { /* Letter B */
@@ -67,33 +82,43 @@ html, body {
 }
 
 .wt-logo .cls-2:nth-child(5) { /* Letter T */
+
 }
 
 .wt-logo .cls-2:nth-child(6) { /* Letter R */
+
 }
 
 .wt-logo .cls-2:nth-child(7) { /* Letter A */
+
 }
 
 .wt-logo .cls-2:nth-child(8) { /* Letter dot over I:1 */
+
 }
 
 .wt-logo .cls-2:nth-child(9) { /* Letter I:1 */
+
 }
 
 .wt-logo .cls-2:nth-child(10) { /* Letter N:1 */
+
 }
 
 .wt-logo .cls-2:nth-child(11) { /* Letter dot over I:2 */
+
 }
 
 .wt-logo .cls-2:nth-child(12) { /* Letter I:2 */
+
 }
 
 .wt-logo .cls-2:nth-child(13) { /* Letter N:2 */
+
 }
 
 .wt-logo .cls-2:nth-child(14) { /* Letter G */
+
 }
 
 /* END: Initial states */
@@ -101,18 +126,26 @@ html, body {
 /* START: Animation triggered */
 .wt-logo.wt-logo--ready .cls-1:last-child { /* Birrete */
     animation: birrete-stroke-animation 2000ms ease-in-out 1s 1 forwards,
-    birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
+    birrete-fill-animation 750ms ease-in-out 3s 1 forwards,
+    birrete-translate-animation 500ms ease-in-out 3000ms 1 forwards;
 }
 
 .wt-logo.wt-logo--ready .cls-1:first-child { /* Llave */
     animation: bracket-stroke-animation 2000ms ease-in-out 1s 1 forwards,
-    birrete-fill-animation 750ms ease-in-out 3s 1 forwards;
+    birrete-fill-animation 750ms ease-in-out 3s 1 forwards,
+    birrete-translate-animation 500ms ease-in-out 3200ms 1 forwards;
+}
+
+.wt-logo.wt-logo--ready .cls-2 {
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(2) { /* Letter W */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(3) { /* Letter E */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(4) { /* Letter B */
@@ -120,33 +153,43 @@ html, body {
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(5) { /* Letter T */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(6) { /* Letter R */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(7) { /* Letter A */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(8) { /* Letter dot over I:1 */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(9) { /* Letter I:1 */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(10) { /* Letter N:1 */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(11) { /* Letter dot over I:2 */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(12) { /* Letter I:2 */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(13) { /* Letter N:2 */
+
 }
 
 .wt-logo.wt-logo--ready .cls-2:nth-child(14) { /* Letter G */
+
 }
 
 /* END: Animation triggered */
